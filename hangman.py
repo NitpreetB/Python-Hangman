@@ -24,7 +24,7 @@ def play(word):
             elif guess not in word :
                 print (guess,"is not in the word")
                 tries -=1
-                guess_letters.append(guess)
+                guessed_letters.append(guess)
             else:
                 print ("good job, ", guess, "is in the word" )
                 guessed_letters.append(guess)
@@ -55,6 +55,7 @@ def play(word):
         print("congrats, you guessed the word, you win ")
     else:
         print (" sorry you ran out of tries")
+        print ("the word was ",word)
 
 
 
@@ -140,7 +141,7 @@ def main():
             play(word)
 
 if __name__=="__main__":
- main()
+    main()
 
         
         
